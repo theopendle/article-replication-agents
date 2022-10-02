@@ -32,19 +32,19 @@ Let's start with the local environment. Here we'll create just one agent, which 
 
 The easiest way to go about this is probably to start by copying the `/etc/replication/agents.author` node to `/etc/replication/agents.local`, then delete the agents you're not interested in. In this case, we'll remove everything except `publish`:
 
-![Creating a new agent in DXR DE](new-agent.png)
+![Creating a new agent in DXR DE](https://github.com/theopendle/article-replication-agents/blob/main/new-agent.png)
 
 As you can see in the screenshot, I also renamed the `agents.local` `jcr:title`.
 
 Now, if you navigate to `/etc/replication`, you will see a new addition to the list!
 
-![The new replication agent is deployed](local-agent-deployed.png)
+![The new replication agent is deployed](https://github.com/theopendle/article-replication-agents/blob/main/local-agent-deployed.png)
 
 This interface is quite handy for configuring the agent, so you can do so now. In my case I'm going to start off basic, using the `admin` user everywhere (yes, it's naughty, I know, we'll fix it later). 
 
 Make sure to test your agent (http://localhost:4502/etc/replication/agents.local/publish.test.html) once you've configured it to guarantee that it all works as expected:
 
-![Successful replication test](local-agent-test.png)
+![Successful replication test](https://github.com/theopendle/article-replication-agents/blob/main/local-agent-test.png)
 
 If you pull the `/etc/replication/agents.local` node into your repo, you should have an XML file that represents the replication agent:
 
@@ -116,11 +116,11 @@ Here is an example:
 
 Deploy to your local instance again and go to `/etc/replication`. You should now see the LOCAL and DEV agents:
 
-![DEV agent deployed](dev-agent-deployed.png)
+![DEV agent deployed](https://github.com/theopendle/article-replication-agents/blob/main/dev-agent-deployed.png)
 
 This is normal. All agents will be deployed, but only the agents that match your run modes will be active. For example, here is my local Author:
 
-![Only local agent active on local environment](replication-agents-deployed.gif)
+![Only local agent active on local environment](https://github.com/theopendle/article-replication-agents/blob/main/replication-agents-deployed.gif)
 
 The principle is the same for UAT, PROD or any environment you like. Just make sure that those instances also have matching run modes.
 
@@ -149,7 +149,7 @@ Unfortunately, this leaves you with these two options:
 
 At this point you should have working, environment-specific replication agents. 
 
-The problem now is that we are using full `admin` privileges for replication, which can lead to security vulnerabilities. As mentioned before, Adobe considers this important enough to publish in the [security checklist]((https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security-checklist.html?lang=en#configure-replication-and-transport-users)).
+The problem now is that we are using full `admin` privileges for replication, which can lead to security vulnerabilities. As mentioned before, Adobe considers this important enough to publish in the [security checklist](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security-checklist.html?lang=en#configure-replication-and-transport-users).
 
 To paraphrase Adobe's explanation, there are two users that work to replication content:
 1. The replication user, which reads content from the source instance (eg: `author`). 
