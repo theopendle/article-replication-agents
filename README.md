@@ -32,7 +32,7 @@ Let's start with the local environment. Here we'll create just one agent, which 
 
 The easiest way to go about this is probably to start by copying the `/etc/replication/agents.author` node to `/etc/replication/agents.local`, then delete the agents you're not interested in. In this case, we'll remove everything except `publish`:
 
-![Creating a new agent in DXR DE](https://github.com/theopendle/article-replication-agents/blob/main/new-agent.png)
+![Creating a new agent in CRX DE](https://github.com/theopendle/article-replication-agents/blob/main/new-agent.png)
 
 As you can see in the screenshot, I also renamed the `agents.local` `jcr:title`.
 
