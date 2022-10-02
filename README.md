@@ -73,7 +73,7 @@ If you pull the `/etc/replication/agents.local` node into your repo, you should 
 
 Great! 🙂 With this, your fellow developers can deploy the replication agent to their local instances! 
 
-### Creating a new module
+> ### Creating a new module
 > I've opted to create a new module called `ui.replication` to host the replication agents.
 > 
 > I'll let you decide if you want to do the same. If you just want to get to the end of this tutorial to prove a concept, then you can skip this step.
