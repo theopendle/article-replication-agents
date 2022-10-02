@@ -238,3 +238,13 @@ The end result looks like this:
         userId="replication-user"/>
 </jcr:root>
 ```
+
+## Conclusion
+
+Congratulations, you can now deploy your replication agents as code! 😀
+
+The source code for this tutorial is [on Github](https://github.com/theopendle/aem-demo/compare/tutorial/replication-agents).
+
+I've created a diff so you can see just the changes to make this feature work [here](https://github.com/theopendle/aem-demo/compare/ff945f4dd7012fc904b48e89d08a693aca34744c...fd623eff08c9ae5b7a5e33dfac241562d3984d12).
+
+Don’t hesitate to contact me on [LinkedIn](https://www.linkedin.com/in/theo-pendle-1630a52a) if you have any questions/ideas!
