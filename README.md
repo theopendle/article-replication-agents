@@ -166,7 +166,7 @@ I'll let you decide what those permissions will be for your application. But for
 
 The `replication-user` is the easiest to use. You can do so by setting the following property in your replication agent XML file: 
 
-```xml
+```
 userId="replication-user"
 ```
 
@@ -181,7 +181,7 @@ curl -u admin:admin -F"datum=password-goes-here" http://localhost:4502/system/co
 ```
 
 Take resulting encrypted value (curly braces included) and set the `transportPassword`  property, like so:
-```xml
+```
 transportPassword="{String}{537dc0a2c2de05f46fa9d65fb884c5b243fb2948e2f4b0ab4826c0912dc2154e}"
 ```
 
